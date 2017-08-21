@@ -11,7 +11,10 @@ font-family: 'Tulpen One', cursive;*/
   font-size: 45px;
   background-color: #FFD704;
   font-family: 'Nova Square', cursive;
-
+}
+ul{
+  margin: 2px;
+  list-style: none;
 }
 button{
   border: 2px solid black;
@@ -26,6 +29,7 @@ button:hover, .searchBtn:hover{
   background-color: white;
 }
 .searchBtn{
+  margin-bottom: 15px;
   border: 2px solid black;
   border-radius: 5px;
   background-color: red;

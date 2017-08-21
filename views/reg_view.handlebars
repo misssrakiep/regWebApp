@@ -1,15 +1,19 @@
+<link rel="stylesheet" href="registration_number.css">
+
 <center>
 <form class="search" action="" method="post">
   <input type="search" name="regSearch" value="">
+  <br>
+  <br>
   <input type="submit" class="searchBtn" name="searchBtn" value="Search">
 </form>
 
  {{#if plate}}
- <ul class="plate">
    {{#each plate}}
+   <ul class="plate">
    <li>{{plate}}</li>
-   {{/each}}
  </ul>
+   {{/each}}
  {{else}}
  <h3>No plates available</h3>
 {{/if}}

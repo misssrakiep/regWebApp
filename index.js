@@ -10,7 +10,7 @@ const router = require('router');
 const RegNum = require('./regNum');
 const Models = require('./models');
 
-const models = Models('mongodb://localhost:27017/registration');
+const models = Models('mongodb://localhost:27017/regNumbers');
 const mongoose = require('mongoose');
 const regNum = RegNum(models);
 
