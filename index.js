@@ -12,12 +12,12 @@ const Models = require('./models');
 
 const models = Models('mongodb://localhost:27017/registration');
 const mongoose = require('mongoose');
-
 const regNum = RegNum(models);
 
 // instance of express
 const app = express();
 
+// app.helper('each', require('handlebars-helper-each'));
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
@@ -35,6 +35,8 @@ app.get('/', regNum.index);
 app.get('/add', regNum.addReg);
 app.post('/add', regNum.addReg);
 app.get('/view', regNum.viewScreen);
+app.post('/view', regNum.viewScreen);
+
 
 
 

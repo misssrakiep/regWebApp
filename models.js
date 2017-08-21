@@ -13,7 +13,8 @@ if (err) {
   });
 
   const regSchema = mongoose.Schema({
-    plate: String
+    plate: String,
+    city: String
   });
 
   const regNumbers = mongoose.model('plate', regSchema);

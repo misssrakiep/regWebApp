@@ -1,7 +1,16 @@
+<center>
+<form class="search" action="" method="post">
+  <input type="search" name="regSearch" value="">
+  <input type="submit" class="searchBtn" name="searchBtn" value="Search">
+</form>
+
  {{#if plate}}
- <ul>
+ <ul class="plate">
+   {{#each plate}}
    <li>{{plate}}</li>
+   {{/each}}
  </ul>
  {{else}}
  <h3>No plates available</h3>
 {{/if}}
+</center>
