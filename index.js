@@ -10,7 +10,7 @@ const router = require('router');
 const RegNum = require('./regNum');
 const Models = require('./models');
 
-const models = Models('mongodb://localhost:27017/regNumbers');
+const models = Models(process.env.MONGO_DB_URL ||'mongodb://localhost:27017/regNumbers');
 const mongoose = require('mongoose');
 const regNum = RegNum(models);
 
@@ -40,8 +40,8 @@ app.post('/view', regNum.viewScreen);
 
 
 
-const port = 3006;
+const port = process.env.PORT || 3006;
 app.listen(port, function(){
   console.log('App has started on port: ' + port);
 });
-app.set('port', port);
+app.set('port', process.env.PORT ||  port);
