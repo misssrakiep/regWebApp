@@ -21,17 +21,34 @@
        city : city
      };
 
-     models.regNumbers.find({"city" : search}, function(err, result) {
-       if (err) {
-         console.log(err);
-       } else {
-         console.log(result);
-         res.render('reg_view', {
-           plate : result
-         });
-       }
-     })
-   }
+     if(search === null){
+       models.regNumbers.find({}, function(err, result) {
+         if (err) {
+           console.log(err);
+         } else {
+           console.log(result);
+           res.render('reg_view', {
+             plate : result
+           });
+         }
+       })
+     }
+
+     else {
+       models.regNumbers.find({"city" : search}, function(err, result) {
+         if (err) {
+           console.log(err);
+         } else {
+           console.log(result);
+           res.render('reg_view', {
+             plate : result
+           });
+         }
+       })
+     }
+     }
+
+
 
    const addReg = function(req, res, next) {
      var plate = req.body.plateInput;
