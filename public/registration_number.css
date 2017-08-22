@@ -68,3 +68,9 @@ button:hover, .searchBtn:hover{
   right: 0;
   margin-right: 10px;
 }
+input{
+  height: 30px;
+  width: 300px;
+  border: 2px solid grey;
+  text-align: center;
+}
