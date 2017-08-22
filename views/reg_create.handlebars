@@ -1,18 +1,22 @@
 <link rel="stylesheet" href="registration_number.css">
 <center>
-<div class="plate">
   {{#if plate}}
-  {{plate}}
-</div>
+  <div class="plate">
+    {{plate}}
+  </div>
   <br>
   <h2>New entry to {{city}}'s registration directory</h2>
   {{else}}
-  Create a new plate below
+  <div class="create">
+    Create a new plate below
+  </div>
   {{/if}}
 
 <form class="regForm" action="" method="post">
-  <input type="text" name="plateInput" value="" placeholder="eg.: CA XXX-XXX">
-  <input type="text" name="city" value="" placeholder="Cape Town">
+<h3>Insert a registration number below</h3> <br>
+  <input type="text" name="plateInput" value="" placeholder="eg.: CA XXX-XXX" required><br>
+  <h3>Which city is this number plate from?</h3><br>
+  <input type="text" name="city" value="" placeholder="Cape Town" required><br>
   <input type="submit" class="searchBtn" name="" value="Create">
 </form>
 

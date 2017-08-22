@@ -8,13 +8,15 @@
   <input type="submit" class="searchBtn" name="searchBtn" value="Search">
 </form>
 
+<div class="plate">
  {{#if plate}}
    {{#each plate}}
-   <ul class="plate">
+   <ul>
    <li>{{plate}}</li>
- </ul>
+  </ul>
    {{/each}}
  {{else}}
- <h3>No plates available</h3>
+ No plates available
 {{/if}}
+</div>
 </center>
