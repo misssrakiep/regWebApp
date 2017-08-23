@@ -41,6 +41,7 @@
          } else {
            console.log(result);
            res.render('reg_view', {
+             search: search,
              plate : result
            });
          }

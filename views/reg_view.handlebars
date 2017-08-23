@@ -1,8 +1,13 @@
 <link rel="stylesheet" href="registration_number.css">
 
 <center>
+  <a href="/"><button type="button" name="button">Home</button></a>
+  <a href="/add"><button type="button" name="button1">Create a new plate</button></a>
 <form class="search" action="" method="post">
-  <h2>Search registration numbers by city:</h2>
+  <h1>Search registration numbers by city:</h1>
+{{#if search}}
+  <h2>Showing searches for {{search}}</h2>
+  {{/if}}
   <input type="search" name="regSearch" value="" placeholder="Enter a city to search">
   <br>
   <br>
@@ -23,8 +28,4 @@
 </div>
 {{/if}}
 
-<div class="github">
-  <a href="/"><button type="button" name="button">Home</button></a>
-<a href="/add"><button type="button" name="button1">Create a new plate</button></a>
-</div>
 </center>
