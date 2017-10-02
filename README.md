@@ -33,7 +33,21 @@ To create the perfect development environment it is assumed that you already hav
 
 * npm
 
+* Nodemon (optional)
+
 * A text editor of your choice
+
+**NodeJS**
+
+Node.js is a platform built on Chrome's JavaScript runtime for easily building fast and scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
+
+**npm**
+
+npm , short for Node Package Manager, is two things: first and foremost, it is an online repository for the publishing of open-source Node.js projects; second, it is a command-line utility for interacting with said repository that aids in package installation, version management, and dependency management.
+
+**Nodemon**
+
+Nodemon is a utility that will monitor for any changes in your source and automatically restart your server. Perfect for development. Install it using npm. Just use nodemon instead of node to run your code, and now your process will automatically restart when your code changes.
 
 ## -Getting started on the application:
 
